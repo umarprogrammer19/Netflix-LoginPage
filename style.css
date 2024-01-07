@@ -1,0 +1,99 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #b3b3b3;
+    background-blend-mode: multiply;
+}
+
+.login {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    min-width: 300px;
+    padding: 60px 68px 40px;
+}
+
+
+
+.login__title {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.login__group {
+    position: relative;
+    z-index: 10;
+    display: flex;
+}
+
+.login__group__label {
+    position: absolute;
+    z-index: 15;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    top: 30px;
+    left: 18px;
+    transition: all 300ms ease-in;
+    will-change: transform;
+}
+
+.login__group__input {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background: #333;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    opacity: 1;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 50px;
+    padding: 12px 18px 0;
+}
+
+.login__group__input:focus+.login__group__label {
+    top: 15px;
+    font-size: 0.7rem;
+}
+
+.login__sign-in {
+    margin: 24px 0 12px;
+    padding: 16px;
+    color: #fff;
+    background: #e50914;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login__secondary-cta {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__secondary-cta__text {
+    opacity: 1;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    text-decoration: none;
+    will-change: transform;
+}
+
+.login__secondary-cta__text--need-help:hover {
+    text-decoration: underline;
+}
+
+::placeholder {
+    font-size: 0.7rem;
+}
